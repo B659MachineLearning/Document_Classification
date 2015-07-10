@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.PriorityQueue;
+import java.util.Scanner;
 import java.util.Set;
 
 import Utilities.Utils;
@@ -28,7 +29,11 @@ public class Classification {
 	public static ArrayList<String> categories = new ArrayList<String>();
 	
 	public static void main(String[] args){
-		HashSet<String> features = getFeatures(5);
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter number of words for each category : ");
+		int numberOfWords = s.nextInt();
+		
+		HashSet<String> features = getFeatures(numberOfWords);
 		try {
 			Utils.createCSV(features);
 		} catch (IOException e) {

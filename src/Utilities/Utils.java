@@ -143,7 +143,7 @@ public class Utils {
 		
 		for(Entry<String, String> ent : Classification.docText.entrySet()){
 			for(String f : featureList){
-				if(ent.getValue().contains(f)){
+				if(ent.getValue().toLowerCase().contains(f)){
 					writer.write("1,");
 				}
 				else{
