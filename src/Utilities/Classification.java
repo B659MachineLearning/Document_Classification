@@ -19,9 +19,10 @@ import Utilities.WordCount;
 
 public class Classification {
 	
-	
-	public static String fileName = "F:\\DocumentClassification\\DocInfo\\";
-	public static String textFile = "F:\\DocumentClassification\\Document Text AFP & CNA.txt";
+	//File containing doc ids for category
+	public static String fileName = "DocInfo\\";
+	//File containing text for all documents
+	public static String textFile = "Document Text AFP & CNA.txt";
 	
 	public static HashMap<String, String> docText = new HashMap<String, String>();
 	public static HashMap<String, String> docLable = new HashMap<String, String>();	
